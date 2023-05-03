@@ -1,0 +1,142 @@
+<<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+    <!-- font awesome cdn link  -->
+    
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="cs.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
+    <style>
+.nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+  font-size: 15PX;
+  margin-left: 50px;
+  margin-right: 100px;
+  margin-top: 10px;
+}
+
+.nav li {
+  float: left;
+  text-align: center;
+  
+}
+
+.nav li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.nav li a:hover {
+  background-color: #111;
+}
+</style>
+
+</head>
+
+ 
+<!-- header section starts  -->
+
+<header>
+
+    <div class="user">
+        <img src="g.jpg" alt="">
+        <h3 class="name">User</h3>
+        
+    </div>
+
+    <nav class="navbar">
+        <ul>
+            <li><a href="#home">Profile</a></li>
+            <li><a href="#about">Setting</a></li>
+            <li><a href="index.html">logout</a></li>
+        </ul>
+    </nav>
+
+</header>
+
+<!-- header section ends -->
+<h1 style="color: aliceblue; font-size: 40px; text-align: center;">DashBoard</h1>
+<nav class="nav">
+<ul>
+  <li><a class="active" href="#home">CS/IT</a></li>
+  <li><a href="ECE.HTML">ECE</a></li>
+  <li><a href="electronics.html">Electronics</a></li>
+  <li><a href="Electrical.html">Electrical</a></li>
+  <li><a href="mechnical.html">Mechanical</a></li>
+    <li><a class="active" href="civil.html">civil</a></li>
+  <li><a href="iot.html">Industry IOT</a></li>
+  <li><a href="boys.html">Boys Hostel</a></li>
+  <li><a href="Admistartion.html">Admistartion</a></li>
+</ul>
+</nav>
+
+<div id="menu" class="fas fa-bars"></div>
+
+<!-- home section starts  -->
+
+<section class="home" id="home">
+    <H1 style="color: aliceblue; font-size: 25px; text-align: center;">CS/IT</H1>
+    <canvas id="myChart" style="width:100%;max-width:600px"></canvas>
+    
+    <script>
+        
+    var xValues = ["Jan-22" ,"Feb-22","Mar-22","Apr-22","May-22","Jun-22","Jul-22","Aug-22","Sep-22","Oct-22","Nov-22","Dec-22","Jan-23","Feb-23","Mar-23","Apr-23"];
+    var yValues = [886.8,895.1,1578.1,1523.4,1585.1,1532.9,1577,1570.6,1522.8,1570.5,1518.3,1565.8,1561.6,1454.3,1571.8,1539.5];
+    var barColors = ["#FFBD50", "#FFBD50","#FFBD50","#FFBD50","#FFBD50","#FFBD50","#FFBD50","#FFBD50","#FFBD50","#FFBD50","#FFBD50","#FFBD50","#FFBD50","#FFBD50","#FFBD50","#FFBD50"];
+    
+    new Chart("myChart", {
+      type: "bar",
+      data: {
+        labels: xValues,
+        datasets: [{
+          backgroundColor: barColors,
+          data: yValues
+        }]
+      },
+      options: {
+        legend: {display: false},
+        title: {
+          display: true,
+          
+        }
+      }
+    });
+    </script>
+
+
+
+</section>
+
+<!-- home section ends -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

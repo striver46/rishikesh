@@ -1,0 +1,142 @@
+<<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+
+    <!-- font awesome cdn link  -->
+    
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="boys.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
+    <style>
+.nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+  font-size: 15PX;
+  margin-left: 50px;
+  margin-right: 100px;
+  margin-top: 10px;
+}
+
+.nav li {
+  float: left;
+  text-align: center;
+  
+}
+
+.nav li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.nav li a:hover {
+  background-color: #111;
+}
+</style>
+
+</head>
+
+ 
+<!-- header section starts  -->
+
+<header>
+
+    <div class="user">
+        <img src="g.jpg" alt="">
+        <h3 class="name">User</h3>
+        
+    </div>
+
+    <nav class="navbar">
+        <ul>
+            <li><a href="#home">Profile</a></li>
+            <li><a href="#about">Setting</a></li>
+            <li><a href="index.html">logout</a></li>
+        </ul>
+    </nav>
+
+</header>
+
+<!-- header section ends -->
+<h1 style="color: aliceblue; font-size: 40px; text-align: center;">DashBoard</h1>
+<nav class="nav">
+<ul>
+    <li><a class="active" href="#home">CS/IT</a></li>
+    <li><a href="ECE.HTML">ECE</a></li>
+    <li><a href="electronics.html">Electronics</a></li>
+    <li><a href="Electrical.html">Electrical</a></li>
+    <li><a href="mechnical.html">Mechanical</a></li>
+      <li><a class="active" href="civil.html">civil</a></li>
+    <li><a href="iot.html">Industry IOT</a></li>
+    <li><a href="boys.html">Boys Hostel</a></li>
+    <li><a href="Admistartion.html">Admistartion</a></li>
+</ul>
+</nav>
+
+<div id="menu" class="fas fa-bars"></div>
+
+<!-- home section starts  -->
+
+<section class="" id="boys">
+  <H1 style="color: aliceblue; font-size: 25px; text-align: center;">Boys Hostel</H1>
+  <canvas id="myChart" style="width:100%;max-width:600px; margin-top: 50px; margin-left: 150px;"></canvas>
+  
+  <script>
+  var xValues = ["Jan-22" ,"Feb-22","Mar-22","Apr-22","May-22","Jun-22","Jul-22","Aug-22","Sep-22","Oct-22","Nov-22","Dec-22","Jan-23","Feb-23","Mar-23","Apr-23"];
+  var yValues = [644.2,528,716.6,694.6,721.8,709.1,740,736.4,713.3,737.7,714,737.3,735.3,688,755,355.1];
+  var barColors = ["#FFBD50", "#FFBD50","#FFBD50","#FFBD50","#FFBD50","#FFBD50","#FFBD50","#FFBD50","#FFBD50","#FFBD50","#FFBD50","#FFBD50","#FFBD50","#FFBD50","#FFBD50","#FFBD50"];
+  
+  new Chart("myChart", {
+    type: "bar",
+    data: {
+      labels: xValues,
+      datasets: [{
+        backgroundColor: barColors,
+        data: yValues
+      }]
+    },
+    options: {
+      legend: {display: false},
+      title: {
+        display: true,
+        
+      }
+    }
+  });
+  </script>
+</section>
+
+<!-- home section ends -->
+
+<a href="#home" class="top">
+    <img src="images/scroll-top-img.png" alt="">
+</a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
